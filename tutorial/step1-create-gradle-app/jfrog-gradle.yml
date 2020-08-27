@@ -3,9 +3,9 @@ type: gradle
 usePlugin: false
 useWrapper: true
 resolver:
-  repo: jcenter-gradle-remote
-  serverID: artifactory
+  repo: gradle-demo
+  serverID: Artifactory
 deployer:
-  repo: team1-gradle-dev-us
-  serverID: artifactory
+  repo: gradle-demo
+  serverID: Artifactory
   deployMavenDescriptors: true
