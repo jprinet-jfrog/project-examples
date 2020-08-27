@@ -1,16 +1,16 @@
 buildscript {
 	ext {
-        artifactory_url = System.getenv().int_artifactory_url
+        artifactory_url = System.getenv().int_Artifactory_url
         springBootVersion = '1.3.7.RELEASE'
 
 		
 	}
 	repositories {
 		maven {
-			url "${artifactory_url}/jcenter-gradle-remote"
+			url "${artifactory_url}/gradle-demo"
 			credentials {
-				username = System.getenv().int_artifactory_user
-				password = System.getenv().int_artifactory_apikey
+				username = System.getenv().int_Artifactory_user
+				password = System.getenv().int_Artifactory_apikey
 			}
 		}
 	}
@@ -42,10 +42,10 @@ targetCompatibility = 1.8
 
 repositories {
 	maven {
-		url "${artifactory_url}/team1-gradle"
+		url "${artifactory_url}/gradle-demo"
 		credentials {
-			username = System.getenv().int_artifactory_user
-			password = System.getenv().int_artifactory_apikey
+			username = System.getenv().int_Artifactory_user
+			password = System.getenv().int_Artifactory_apikey
 		}
 	}
 }
